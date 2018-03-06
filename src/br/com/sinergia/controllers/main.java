@@ -1,13 +1,9 @@
 package br.com.sinergia.controllers;
 
 import br.com.sinergia.database.dicionarioDados.ReaderDBDic;
-import br.com.sinergia.models.Campo;
 import br.com.sinergia.models.TabelaFull;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
-import java.sql.Timestamp;
-import java.time.Instant;
 
 public class main extends Application {
 

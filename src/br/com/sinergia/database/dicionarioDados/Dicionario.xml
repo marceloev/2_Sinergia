@@ -142,4 +142,12 @@
             <Opcoes/>
         </Campo>
     </Tabela>
+    <Tabela idxTabela="1" nuTab="2" nomeTab="TGFGRU" descrTab="Tabela de Grupo de Produtos">
+        <Campo idxCampo="0" nuCampo="31" idCampo="1" nomeCampo="CODGRUPOPROD" descrCampo="Cód. Grupo Prod." pesqCampo="Código do Grupo de Produtos"/>
+        <InfoCampo tipoCampo="1" vlrCampo="38" foreign="N" nullable="N" default="0"/>
+        <Opcoes/>
+        <Campo idxCampo="1" nuCampo="32" idCampo="2" nomeCampo="DESCRGRUPOPROD" descrCampo="Descr. Grupo Prod." pesqCampo="Descrição do Grupo de Produtos"/>
+        <InfoCampo tipoCampo="1" vlrCampo="38" foreign="N" nullable="N" default="0"/>
+        <Opcoes/>
+    </Tabela>
 </Tabelas>
