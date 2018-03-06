@@ -7,7 +7,7 @@ public class Campo {
 
     private Integer idxCampo;
     private Integer codCampo;
-    private Campo_Type tipoCampo;
+    private TipoCampos tipoCampo;
     private Integer vlrCampo;
     private String nomeCampo;
     private String descrCampo;
@@ -18,16 +18,13 @@ public class Campo {
     private Boolean Opcao;
     private Map<String, String> camposOpcao = new LinkedHashMap<>();
 
-    /*public Campo(Integer idxCampo, Integer codCampo, Integer tipoCampo, String nomeCampo, String descrCampo,
-                 String pesqCampo, Boolean foreign, Boolean nullable, Object Default, Boolean )*/
-
     public Campo(Integer idxCampo, Integer codCampo, String nomeCampo, String descrCampo, String pesqCampo,
                  Integer tipoCampo, Integer vlrCampo, Boolean foreign, Boolean nullable,
                  String Default, Boolean opcao, Map<String, String> camposOpcao) {
         super();
         setIdxCampo(idxCampo);
         setCodCampo(codCampo);
-        setTipoCampo(Campo_Type.getTipoCampo(tipoCampo));
+        setTipoCampo(TipoCampos.getTipoCampo(tipoCampo));
         setVlrCampo(vlrCampo);
         setNomeCampo(nomeCampo);
         setDescrCampo(descrCampo);
@@ -55,11 +52,11 @@ public class Campo {
         this.codCampo = codCampo;
     }
 
-    public Campo_Type getTipoCampo() {
+    public TipoCampos getTipoCampo() {
         return tipoCampo;
     }
 
-    public void setTipoCampo(Campo_Type tipoCampo) {
+    public void setTipoCampo(TipoCampos tipoCampo) {
         this.tipoCampo = tipoCampo;
     }
 
@@ -133,40 +130,5 @@ public class Campo {
 
     public void setCamposOpcao(Map<String, String> camposOpcao) {
         this.camposOpcao = camposOpcao;
-    }
-
-
-    public enum Campo_Type {
-        NUMBER, DATE, FLOAT, DECIMAL, DOUBLE, VARCHAR2, BLOB, NENHUM;
-
-        public static Campo_Type getTipoCampo(Integer idx) {
-            Campo_Type retorno;
-            switch (idx) {
-                case 1:
-                    retorno = NUMBER;
-                    break;
-                case 2:
-                    retorno = DATE;
-                    break;
-                case 3:
-                    retorno = FLOAT;
-                    break;
-                case 4:
-                    retorno = DECIMAL;
-                    break;
-                case 5:
-                    retorno = DOUBLE;
-                    break;
-                case 6:
-                    retorno = VARCHAR2;
-                    break;
-                case 7:
-                    retorno = BLOB;
-                default:
-                    retorno = NENHUM;
-                    break;
-            }
-            return retorno;
-        }
     }
 }

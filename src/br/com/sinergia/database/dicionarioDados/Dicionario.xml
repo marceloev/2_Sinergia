@@ -5,12 +5,13 @@
             <InfoCampo tipoCampo="1" vlrCampo="38" foreign="N" nullable="N" default="null"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="1" nuCampo="2" idCampo="2" nomeCampo="DESCRPROD" descrCampo="Descrição" pesqCampo="Descr. Prod.">
+        <Campo idxCampo="1" nuCampo="2" idCampo="2" nomeCampo="DESCRPROD" descrCampo="Descrição"
+               pesqCampo="Descr. Prod.">
             <InfoCampo tipoCampo="6" vlrCampo="40" foreign="N" nullable="N" default="null"/>
             <Opcoes/>
         </Campo>
         <Campo idxCampo="2" nuCampo="3" idCampo="3" nomeCampo="COMPLEMENTO" descrCampo="Complemento"
-               pesqCampo="Compl. Prod.">
+               pesqCampo="Complemento">
             <InfoCampo tipoCampo="6" vlrCampo="80" foreign="N" nullable="N" default="null"/>
             <Opcoes/>
         </Campo>
@@ -20,11 +21,7 @@
             <Opcoes/>
         </Campo>
         <Campo idxCampo="4" nuCampo="5" idCampo="5" nomeCampo="ATIVO" descrCampo="Ativo" pesqCampo="Ativo">
-            <InfoCampo tipoCampo="6" vlrCampo="1" foreign="N" nullable="N" default="S"/>
-            <Opcoes>
-                <Opcao idx="1" valor="S" resultado="Sim"/>
-                <Opcao idx="2" valor="N" resultado="Não"/>
-            </Opcoes>
+            <InfoCampo tipoCampo="8" vlrCampo="1" foreign="N" nullable="N" default="S"/>
         </Campo>
         <Campo idxCampo="5" nuCampo="6" idCampo="6" nomeCampo="CODGRUPOPROD" descrCampo="Cód. Grupo de Produtos"
                pesqCampo="Cód. Grupo Prod.">
@@ -46,11 +43,13 @@
             <InfoCampo tipoCampo="1" vlrCampo="38" foreign="S" nullable="S" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="9" nuCampo="10" idCampo="10" nomeCampo="CODBARRAS" descrCampo="Cód. de Barras" pesqCampo="Cód. Barras">
+        <Campo idxCampo="9" nuCampo="10" idCampo="10" nomeCampo="CODBARRAS" descrCampo="Cód. de Barras"
+               pesqCampo="Cód. Barras">
             <InfoCampo tipoCampo="1" vlrCampo="20" foreign="N" nullable="S" default="null"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="10" nuCampo="11" idCampo="11" nomeCampo="REFERENCIA" descrCampo="Referência" pesqCampo="Referência">
+        <Campo idxCampo="10" nuCampo="11" idCampo="11" nomeCampo="REFERENCIA" descrCampo="Referência"
+               pesqCampo="Referência">
             <InfoCampo tipoCampo="6" vlrCampo="20" foreign="N" nullable="S" default="null"/>
             <Opcoes/>
         </Campo>
@@ -58,7 +57,8 @@
             <InfoCampo tipoCampo="6" vlrCampo="20" foreign="N" nullable="N" default="null"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="12" nuCampo="13" idCampo="13" nomeCampo="USOPROD" descrCampo="Usado como" pesqCampo="Usado como">
+        <Campo idxCampo="12" nuCampo="13" idCampo="13" nomeCampo="USOPROD" descrCampo="Usado como"
+               pesqCampo="Usado como">
             <InfoCampo tipoCampo="6" vlrCampo="30" foreign="N" nullable="N" default="null"/>
             <Opcoes/>
         </Campo>
@@ -70,52 +70,75 @@
             <InfoCampo tipoCampo="6" vlrCampo="10" foreign="N" nullable="S" default="null"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="15" nuCampo="16" idCampo="16" nomeCampo="DECCUSTO" descrCampo="Dec. p/ custo" pesqCampo="Dec. Custo">
+        <Campo idxCampo="15" nuCampo="16" idCampo="16" nomeCampo="DECCUSTO" descrCampo="Dec. p/ custo"
+               pesqCampo="Dec. Custo">
             <InfoCampo tipoCampo="1" vlrCampo="5" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="16" nuCampo="17" idCampo="17" nomeCampo="DECVLR" descrCampo="Dec. p/ valor" pesqCampo="Dec. Valor">
+        <Campo idxCampo="16" nuCampo="17" idCampo="17" nomeCampo="DECVLR" descrCampo="Dec. p/ valor"
+               pesqCampo="Dec. Valor">
             <InfoCampo tipoCampo="1" vlrCampo="5" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="17" nuCampo="18" idCampo="18" nomeCampo="DECQTD" descrCampo="Dec. p/ quantidade" pesqCampo="Dec. Quantidade">
+        <Campo idxCampo="17" nuCampo="18" idCampo="18" nomeCampo="DECQTD" descrCampo="Dec. p/ quantidade"
+               pesqCampo="Dec. Quantidade">
             <InfoCampo tipoCampo="1" vlrCampo="5" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="18" nuCampo="19" idCampo="19" nomeCampo="PERCOMGER" descrCampo="% Com. Gerente" pesqCampo="% Comissão Gerente">
+        <Campo idxCampo="18" nuCampo="19" idCampo="19" nomeCampo="PERCOMGER" descrCampo="% Com. Gerente"
+               pesqCampo="% Comissão Gerente">
             <InfoCampo tipoCampo="3" vlrCampo="20" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="19" nuCampo="20" idCampo="20" nomeCampo="PERCOMVEN" descrCampo="% Com. Vendedor" pesqCampo="% Comissão Vendedor">
+        <Campo idxCampo="19" nuCampo="20" idCampo="20" nomeCampo="PERCOMVEN" descrCampo="% Com. Vendedor"
+               pesqCampo="% Comissão Vendedor">
             <InfoCampo tipoCampo="3" vlrCampo="20" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="20" nuCampo="21" idCampo="21" nomeCampo="DESCMAX" descrCampo="% Desc. Máximo" pesqCampo="% Desconto Máximo">
+        <Campo idxCampo="20" nuCampo="21" idCampo="21" nomeCampo="DESCMAX" descrCampo="% Desc. Máximo"
+               pesqCampo="% Desconto Máximo">
             <InfoCampo tipoCampo="3" vlrCampo="20" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="21" nuCampo="22" idCampo="22" nomeCampo="VENDAMIN" descrCampo="% Venda Min." pesqCampo="% Venda Mínima">
+        <Campo idxCampo="21" nuCampo="22" idCampo="22" nomeCampo="VENDAMIN" descrCampo="% Venda Min."
+               pesqCampo="% Venda Mínima">
             <InfoCampo tipoCampo="1" vlrCampo="10" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="22" nuCampo="23" idCampo="23" nomeCampo="VENDAMAX" descrCampo="% Venda Máx." pesqCampo="% Venda Máxima">
+        <Campo idxCampo="22" nuCampo="23" idCampo="23" nomeCampo="VENDAMAX" descrCampo="% Venda Máx."
+               pesqCampo="% Venda Máxima">
             <InfoCampo tipoCampo="1" vlrCampo="10" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
         <Campo idxCampo="23" nuCampo="24" idCampo="24" nomeCampo="PROMOCAO" descrCampo="Em Promoção"
                pesqCampo="Em Promoção">
-            <InfoCampo tipoCampo="6" vlrCampo="1" foreign="N" nullable="N" default="N"/>
-            <Opcoes>
-                <Opcao idx="1" valor="S" resultado="Sim"/>
-                <Opcao idx="2" valor="N" resultado="Não"/>
-            </Opcoes>
+            <InfoCampo tipoCampo="8" vlrCampo="1" foreign="N" nullable="N" default="N"/>
         </Campo>
-        <Campo idxCampo="24" nuCampo="25" idCampo="25" nomeCampo="ESTMIN" descrCampo="Estoque Mín." pesqCampo="Estoque Mínimo">
+        <Campo idxCampo="24" nuCampo="25" idCampo="25" nomeCampo="ESTMIN" descrCampo="Estoque Mín."
+               pesqCampo="Estoque Mínimo">
             <InfoCampo tipoCampo="1" vlrCampo="10" foreign="N" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
-        <Campo idxCampo="25" nuCampo="26" idCampo="26" nomeCampo="ESTMAX" descrCampo="Estoque Máx." pesqCampo="Estoque Máximo">
+        <Campo idxCampo="25" nuCampo="26" idCampo="26" nomeCampo="ESTMAX" descrCampo="Estoque Máx."
+               pesqCampo="Estoque Máximo">
             <InfoCampo tipoCampo="1" vlrCampo="10" foreign="N" nullable="N" default="0"/>
+            <Opcoes/>
+        </Campo>
+        <Campo idxCampo="26" nuCampo="27" idCampo="27" nomeCampo="PERMCOMPRA" descrCampo="Perm. Comprar"
+               pesqCampo="Permite Comprar">
+            <InfoCampo tipoCampo="8" vlrCampo="1" foreign="N" nullable="N" default="S"/>
+        </Campo>
+        <Campo idxCampo="27" nuCampo="28" idCampo="28" nomeCampo="PERMVENDA" descrCampo="Perm. Vender"
+               pesqCampo="Permite Vender">
+            <InfoCampo tipoCampo="8" vlrCampo="1" foreign="N" nullable="N" default="S"/>
+        </Campo>
+        <Campo idxCampo="28" nuCampo="29" idCampo="29" nomeCampo="PERMCONSUMO" descrCampo="Perm. Consumir"
+               pesqCampo="Permite Consumir">
+            <InfoCampo tipoCampo="8" vlrCampo="1" foreign="N" nullable="N" default="S"/>
+        </Campo>
+        <Campo idxCampo="29" nuCampo="30" idCampo="30" nomeCampo="CODLOCAL" descrCampo="Cód. Local"
+               pesqCampo="Código Local">
+            <InfoCampo tipoCampo="1" vlrCampo="38" foreign="S" nullable="N" default="0"/>
             <Opcoes/>
         </Campo>
     </Tabela>
