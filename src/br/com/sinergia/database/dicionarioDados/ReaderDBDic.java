@@ -12,7 +12,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -125,7 +124,9 @@ public class ReaderDBDic {
                 }
             }
         } else {
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(readXMLFile("E:\\Projetos\\2_Sinergia\\src\\br\\com\\sinergia\\database\\dicionarioDados\\Dicionario.xml"));
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse("E:\\Projetos\\2_Sinergia\\src\\br\\com\\sinergia\\database\\dicionarioDados\\Dicionario.xml");
             doc.getDocumentElement().normalize();
             NodeList nodeList = doc.getElementsByTagName("Tabela");
             Node node = nodeList.item(idxTabela);
