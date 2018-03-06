@@ -25,6 +25,13 @@ public class ReaderDBDic {
 
     public static TabelaFull tabelaFull;
 
+    /*
+    Obs: Importante desta tela, ela controla todo o Dicionário de dados.
+    Indice da Tabela = idxTabela || Indice do Campo = idxCampo
+    É mais performatico pegar campo por campo, e não toda a tabela e depois os campos,
+    mesmo que a quantidade de campos seja grande
+    ---------------------------------------------------------
+    */
     public static Tabela getTabelaByIndex(Integer idxTabela) throws Exception {
         //File fileXML = new File("./br/com/sinergia/database/dicionario/FilesXML/Tabelas/TGFPRO.xml");
         File fileXML = new File("E:\\Projetos\\Sinergia\\src\\br\\com\\sinergia\\database\\dicionario\\FilesXML\\Tabelas\\TGFPRO.xml");
