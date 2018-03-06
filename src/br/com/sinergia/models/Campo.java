@@ -137,7 +137,7 @@ public class Campo {
 
 
     public enum Campo_Type {
-        NUMBER, DATE, FLOAT, DECIMAL, DOUBLE, VARCHAR2, NENHUM;
+        NUMBER, DATE, FLOAT, DECIMAL, DOUBLE, VARCHAR2, BLOB, NENHUM;
 
         public static Campo_Type getTipoCampo(Integer idx) {
             Campo_Type retorno;
@@ -160,6 +160,8 @@ public class Campo {
                 case 6:
                     retorno = VARCHAR2;
                     break;
+                case 7:
+                    retorno = BLOB;
                 default:
                     retorno = NENHUM;
                     break;

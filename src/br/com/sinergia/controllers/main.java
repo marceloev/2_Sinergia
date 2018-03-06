@@ -18,8 +18,11 @@ public class main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            System.out.println(Timestamp.from(Instant.now()));
-            System.out.println(Timestamp.from(Instant.now()));
+            TabelaFull tabProdutos = ReaderDBDic.getTabelaFullByIndex(0);
+            tabProdutos.getCampos().forEach(campo -> {
+                System.out.println(campo.getDescrCampo());
+                System.out.println(campo.getNomeCampo() + ": " + campo.getTipoCampo() + "(" + campo.getVlrCampo() + ")");
+            });
         } catch (Exception ex) {
             System.err.println(ex.getMessage());
             ex.printStackTrace();
