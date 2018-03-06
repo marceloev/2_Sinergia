@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Tabelas>
+    <Tabela idxTabela="1" nuTab="1" nomeTab="TGFPRO" descrTab="Tabela de produtos">
+        <Campo nuCampo="1" idCampo="1" nomeCampo="CODPROD" descrCampo="Código do produto" pesqCampo="Cód. Prod.">
+            <InfoCampo tipoCampo="1" vlrCampo="38" foreign="N" nullable="N" default="null"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="2" idCampo="2" nomeCampo="DESCRPROD" descrCampo="Descrição do produto" pesqCampo="Descr. Prod.">
+            <InfoCampo tipoCampo="6" vlrCampo="40" foreign="N" nullable="N" default="null"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="3" idCampo="3" nomeCampo="COMPLEMENTO" descrCampo="Complemento do produto"
+               pesqCampo="Compl. Prod.">
+            <InfoCampo tipoCampo="6" vlrCampo="80" foreign="N" nullable="N" default="null"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="4" idCampo="4" nomeCampo="CARACTERISTICAS" descrCampo="Características"
+               pesqCampo="Características">
+            <InfoCampo tipoCampo="6" vlrCampo="4000" foreign="N" nullable="N" default="null"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="5" idCampo="5" nomeCampo="ATIVO" descrCampo="Ativo" pesqCampo="Ativo">
+            <InfoCampo tipoCampo="6" vlrCampo="1" foreign="N" nullable="N" default="S"/>
+            <Opcoes>
+                <Opcao idx="1" valor="S" resultado="Sim"/>
+                <Opcao idx="2" valor="N" resultado="Não"/>
+            </Opcoes>
+        </Campo>
+        <Campo nuCampo="6" idCampo="6" nomeCampo="CODGRUPOPROD" descrCampo="Código do Grupo de produtos"
+               pesqCampo="Cód. Grupo Prod.">
+            <InfoCampo tipoCampo="1" vlrCampo="38" foreign="S" nullable="N" default="0"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="7" idCampo="7" nomeCampo="DHCRIACAO" descrCampo="Data/Hora criação do produto"
+               pesqCampo="Data/Hora Criação">
+            <InfoCampo tipoCampo="2" vlrCampo="0" foreign="N" nullable="N" default="SYSDATE"/>
+            <Opcoes/>
+        </Campo>
+        <Campo nuCampo="8" idCampo="8" nomeCampo="DHALTER" descrCampo="Data/Hora Alteração do produto"
+               pesqCampo="Data/Hora Alteração">
+            <InfoCampo tipoCampo="2" vlrCampo="0" foreign="N" nullable="N" default="SYSDATE"/>
+            <Opcoes/>
+        </Campo>
+    </Tabela>
+</Tabelas>
